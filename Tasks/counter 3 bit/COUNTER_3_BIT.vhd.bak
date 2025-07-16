@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity counter_3_bit is
+  port (clk, rst : in  std_logic;
+        q : out std_logic_vector (2 downto 0));
+end entity;
+
+architecture behavioral of counter_3_bit is
+  
+  signal Local_q : std_logic_vector(2 downto 0);
+  
+begin
+  
+  process (clk, rst)
+  begin
+    
+    --q <= "000";
+    
+    if rst = '1' then Local_q <= "000";
+    end if;
+    
+    if rising_edge(clk) then Local_q <= std_logic_vector(unsigned(Local_q) + 1);
+    end if;
+    
+  end process;
+  
+  q <= Local_q;
+
+end architecture;
