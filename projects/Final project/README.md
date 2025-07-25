@@ -2,7 +2,7 @@
 This report documents the design, development, and simulation of an 8-bit microprocessor. The architecture follows a classical fetch-decode-execute cycle and includes components for data storage, arithmetic logic operations, instruction handling, and control. The design was implemented in VHDL and verified using behavioral testbenches. The microprocessor's datapath and control logic are aligned with the architectural block diagram provided in the "8-bit microprocessor".
 
 ## Block Diagram
-![Block Diagram](Screenshot 2025-07-24 144414.png)
+![Block Diagram](Screenshot%202025-07-24%20144414.png)
 
 ## System Components
 The microprocessor is composed of the following key modules:
@@ -110,7 +110,7 @@ In full-system simulation (`tb_microprocessor`):
 * Final value moved to `output` via OUT instruction.
 * Simulation ran for 2 ms with proper reset and monitored output.
 
-![Simulation Results Waveform](Screenshot 2025-07-24 161527.png)
+![Simulation Results Waveform](Screenshot%202025-07-24%20161527.png)
 
 ## Design Quality Evaluation (Based on Image Criteria) 
 
@@ -125,10 +125,10 @@ In full-system simulation (`tb_microprocessor`):
 | Simulation Output       | Logging and waveform review successful      |
 
 ## Schematic 
-![Schematic Diagram](Screenshot 2025-07-24 145149.png)
+![Schematic Diagram](Screenshot%202025-07-24%20145149.png)
 
 ## Timing Analysis 
-![Timing Analysis Summary](Screenshot 2025-07-25 122252.png)
+![Timing Analysis Summary](Screenshot%202025-07-25%20122252.png)
 
 ## Conclusion 
 The 8-bit microprocessor is a complete, functioning system with support for arithmetic, logic, memory, and control operations. The modular design ensures readability, maintainability, and extensibility. Simulation results confirm correctness. The architectural alignment with the provided block diagram is consistent, making the design both educational and implementation-ready for FPGA development. The inclusion of tabulated instruction and ALU operation summaries, validated VHDL implementations, and thorough simulation confirms the robustness of this processor design. Future enhancements may include flag registers (zero, carry), interrupt handling, or expansion of instruction width for extended functionality.
